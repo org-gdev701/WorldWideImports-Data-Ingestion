@@ -1,0 +1,12 @@
+{
+	"name": "SelfHostedIRAzVm",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/1ae888e8-f242-4f1a-a97b-7cb12c70b281/resourcegroups/wsfdep/providers/Microsoft.DataFactory/factories/az-env-prod/integrationruntimes/SelfHostedIRAzVm",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}
