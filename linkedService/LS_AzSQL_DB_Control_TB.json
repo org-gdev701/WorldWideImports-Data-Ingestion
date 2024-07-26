@@ -1,0 +1,27 @@
+{
+	"name": "LS_AzSQL_DB_Control_TB",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sqlsws.database.windows.net",
+			"database": "WideWorldImporters",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sqladmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AKV_AzKVaults",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlsws-WideWorldImporters-password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIRAzVm",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
