@@ -1,0 +1,39 @@
+{
+	"name": "LS_SQLServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"ServerName": {
+				"type": "string",
+				"defaultValue": "10.0.0.4"
+			},
+			"DatabaseName": {
+				"type": "string",
+				"defaultValue": "WideWorldImporters"
+			},
+			"UserName": {
+				"type": "string",
+				"defaultValue": "gdev"
+			},
+			"SecretName": {
+				"type": "string",
+				"defaultValue": "sqlsws-WideWorldImporters-password"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "@{linkedService().ServerName}",
+			"database": "@{linkedService().DatabaseName}",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().UserName}",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxYjE3ZTc2MS1mZGJkLTRkOWItYTBiMS0zMTM1MmExNmI1Y2IiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIRAzVm",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
