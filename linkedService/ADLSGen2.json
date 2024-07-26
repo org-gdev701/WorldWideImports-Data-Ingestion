@@ -1,0 +1,35 @@
+{
+	"name": "ADLSGen2",
+	"properties": {
+		"parameters": {
+			"StorageAccName": {
+				"type": "string",
+				"defaultValue": "azsaws"
+			},
+			"SecretName": {
+				"type": "string",
+				"defaultValue": "ADLS-azsaws-AccessKey"
+			}
+		},
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "@{concat('https://',linkedService().StorageAccName,'.dfs.core.windows.net')}",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AKV_AzKVaults",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": {
+					"value": "@linkedService().SecretName",
+					"type": "Expression"
+				}
+			}
+		},
+		"connectVia": {
+			"referenceName": "AzHostedIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
