@@ -1,0 +1,49 @@
+{
+	"name": "LS_SQLServer",
+	"properties": {
+		"parameters": {
+			"ServerName": {
+				"type": "string",
+				"defaultValue": "10.0.0.4"
+			},
+			"DatabaseName": {
+				"type": "string",
+				"defaultValue": "WideWorldImporters"
+			},
+			"UserName": {
+				"type": "string",
+				"defaultValue": "gdev"
+			},
+			"SecretName": {
+				"type": "string",
+				"defaultValue": "OnPremSQLServer-AzVm-Pass"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "@{linkedService().ServerName}",
+			"database": "@{linkedService().DatabaseName}",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().UserName}",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AKV_AzKVaults",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": {
+					"value": "@linkedService().SecretName",
+					"type": "Expression"
+				}
+			}
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIRAzVm",
+			"type": "IntegrationRuntimeReference"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
+}
