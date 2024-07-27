@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "az-env-dev"
+		},
+		"ADLSGen2_properties_typeProperties_url": {
+			"value": "@{concat('https://',linkedService().StorageAccName,'.dfs.core.windows.net')}"
+		},
+		"AKV_AzKVaults_properties_typeProperties_baseUrl": {
+			"value": "https://AzKVaults.vault.azure.net/"
+		},
+		"LS_AzSQL_DB_Control_TB_properties_typeProperties_server": {
+			"value": "sqlsws.database.windows.net"
+		},
+		"LS_AzSQL_DB_Control_TB_properties_typeProperties_database": {
+			"value": "WideWorldImporters"
+		},
+		"LS_AzSQL_DB_Control_TB_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_SQLServer_properties_typeProperties_server": {
+			"value": "@{linkedService().ServerName}"
+		},
+		"LS_SQLServer_properties_typeProperties_database": {
+			"value": "@{linkedService().DatabaseName}"
+		},
+		"LS_SQLServer_properties_typeProperties_userName": {
+			"value": "@{linkedService().UserName}"
+		},
+		"SelfHostedIRAzVm_properties_typeProperties_linkedInfo_resourceId": {
+			"value": "/subscriptions/1ae888e8-f242-4f1a-a97b-7cb12c70b281/resourcegroups/wsfdep/providers/Microsoft.DataFactory/factories/az-env-prod/integrationruntimes/SelfHostedIRAzVm"
+		}
+	}
+}
