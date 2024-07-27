@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_zyh_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzSQL_DB_Control_TB",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_zyh_20240727"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "metadata",
+			"table": "MainControlTable"
+		}
+	}
+}
