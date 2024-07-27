@@ -1,5 +1,5 @@
 {
-	"name": "MetadataDrivenCopyTask_zyh_SourceDS",
+	"name": "MetadataDrivenCopyTask_SourceDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_SQLServer",

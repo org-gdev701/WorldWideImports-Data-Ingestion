@@ -125,7 +125,7 @@
 												},
 												"inputs": [
 													{
-														"referenceName": "MetadataDrivenCopyTask_zyh_SourceDS",
+														"referenceName": "MetadataDrivenCopyTask_SourceDS",
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_schema": {
@@ -157,7 +157,7 @@
 												],
 												"outputs": [
 													{
-														"referenceName": "MetadataDrivenCopyTask_zyh_DestinationDS",
+														"referenceName": "MetadataDrivenCopyTask_DestinationDS",
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_fileName": {
@@ -212,7 +212,7 @@
 														"partitionOption": "None"
 													},
 													"dataset": {
-														"referenceName": "MetadataDrivenCopyTask_zyh_SourceDS",
+														"referenceName": "MetadataDrivenCopyTask_SourceDS",
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_schema": {
@@ -332,7 +332,7 @@
 												},
 												"inputs": [
 													{
-														"referenceName": "MetadataDrivenCopyTask_zyh_SourceDS",
+														"referenceName": "MetadataDrivenCopyTask_SourceDS",
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_schema": {
@@ -364,7 +364,7 @@
 												],
 												"outputs": [
 													{
-														"referenceName": "MetadataDrivenCopyTask_zyh_DestinationDS",
+														"referenceName": "MetadataDrivenCopyTask_DestinationDS",
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_fileName": {
@@ -520,7 +520,7 @@
 										},
 										"inputs": [
 											{
-												"referenceName": "MetadataDrivenCopyTask_zyh_SourceDS",
+												"referenceName": "MetadataDrivenCopyTask_SourceDS",
 												"type": "DatasetReference",
 												"parameters": {
 													"cw_schema": {
@@ -552,7 +552,7 @@
 										],
 										"outputs": [
 											{
-												"referenceName": "MetadataDrivenCopyTask_zyh_DestinationDS",
+												"referenceName": "MetadataDrivenCopyTask_DestinationDS",
 												"type": "DatasetReference",
 												"parameters": {
 													"cw_fileName": {
@@ -604,7 +604,7 @@
 									"partitionOption": "None"
 								},
 								"dataset": {
-									"referenceName": "MetadataDrivenCopyTask_zyh_ControlDS",
+									"referenceName": "MetadataDrivenCopyTask_ControlDS",
 									"type": "DatasetReference"
 								},
 								"firstRowOnly": false
@@ -632,7 +632,7 @@
 									"partitionOption": "None"
 								},
 								"dataset": {
-									"referenceName": "MetadataDrivenCopyTask_zyh_ControlDS",
+									"referenceName": "MetadataDrivenCopyTask_ControlDS",
 									"type": "DatasetReference"
 								},
 								"firstRowOnly": false

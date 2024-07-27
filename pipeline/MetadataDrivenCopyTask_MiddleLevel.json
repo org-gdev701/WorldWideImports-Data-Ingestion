@@ -40,7 +40,7 @@
 									"partitionOption": "None"
 								},
 								"dataset": {
-									"referenceName": "MetadataDrivenCopyTask_zyh_ControlDS",
+									"referenceName": "MetadataDrivenCopyTask_ControlDS",
 									"type": "DatasetReference"
 								},
 								"firstRowOnly": false

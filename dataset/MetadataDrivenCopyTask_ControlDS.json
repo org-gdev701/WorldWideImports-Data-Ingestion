@@ -1,5 +1,5 @@
 {
-	"name": "MetadataDrivenCopyTask_zyh_ControlDS",
+	"name": "MetadataDrivenCopyTask_ControlDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_AzSQL_DB_Control_TB",

@@ -1,5 +1,5 @@
 {
-	"name": "MetadataDrivenCopyTask_zyh_DestinationDS",
+	"name": "MetadataDrivenCopyTask_DestinationDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ADLSGen2",
@@ -8,7 +8,8 @@
 				"StorageAccName": {
 					"value": "@dataset().cw_ls_StorageAccName",
 					"type": "Expression"
-				}
+				},
+				"SecretName": "ADLS-azsaws-AccessKey"
 			}
 		},
 		"parameters": {
