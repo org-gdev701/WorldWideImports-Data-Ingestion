@@ -1,5 +1,5 @@
 {
-	"name": "MetadataDrivenCopyTask_zyh_BottomLevel",
+	"name": "MetadataDrivenCopyTask_BottomLevel",
 	"properties": {
 		"description": "This pipeline will copy objects from one group. The objects belonging to this group will be copied parallelly.",
 		"activities": [

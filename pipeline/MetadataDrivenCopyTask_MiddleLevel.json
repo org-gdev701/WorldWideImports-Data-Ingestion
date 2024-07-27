@@ -1,5 +1,5 @@
 {
-	"name": "MetadataDrivenCopyTask_zyh_MiddleLevel",
+	"name": "MetadataDrivenCopyTask_MiddleLevel",
 	"properties": {
 		"description": "This pipeline will copy one batch of objects. The objects belonging to this batch will be copied parallelly.",
 		"activities": [
@@ -64,7 +64,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "MetadataDrivenCopyTask_zyh_BottomLevel",
+									"referenceName": "MetadataDrivenCopyTask_BottomLevel",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true,

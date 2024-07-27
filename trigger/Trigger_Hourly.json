@@ -1,12 +1,12 @@
 {
-	"name": "Trigger_zyh",
+	"name": "Trigger_Hourly",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "MetadataDrivenCopyTask_zyh_TopLevel",
+					"referenceName": "MetadataDrivenCopyTask_TopLevel",
 					"type": "PipelineReference"
 				}
 			}

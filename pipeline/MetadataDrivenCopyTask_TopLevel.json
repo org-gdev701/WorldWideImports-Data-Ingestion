@@ -1,5 +1,5 @@
 {
-	"name": "MetadataDrivenCopyTask_zyh_TopLevel",
+	"name": "MetadataDrivenCopyTask_TopLevel",
 	"properties": {
 		"description": "This pipeline will count the total number of objects (tables etc.) required to be copied in this run, come up with the number of sequential batches based on the max allowed concurrent copy task, and then execute another pipeline to copy different batches sequentially.",
 		"activities": [
@@ -62,7 +62,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "MetadataDrivenCopyTask_zyh_MiddleLevel",
+									"referenceName": "MetadataDrivenCopyTask_MiddleLevel",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true,
