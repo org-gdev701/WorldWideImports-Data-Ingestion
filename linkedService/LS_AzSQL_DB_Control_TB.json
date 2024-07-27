@@ -20,7 +20,7 @@
 			}
 		},
 		"connectVia": {
-			"referenceName": "SelfHostedIRAzVm",
+			"referenceName": "AzHostedIR",
 			"type": "IntegrationRuntimeReference"
 		}
 	}
