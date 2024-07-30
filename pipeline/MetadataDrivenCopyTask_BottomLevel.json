@@ -165,11 +165,11 @@
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_fileName": {
-																"value": "@json(item().SinkObjectSettings).fileName",
+																"value": "@json(item().SourceObjectSettings).schema",
 																"type": "Expression"
 															},
 															"cw_folderPath": {
-																"value": "@json(item().SinkObjectSettings).folderPath",
+																"value": "@json(item().SourceObjectSettings).schema",
 																"type": "Expression"
 															},
 															"cw_fileSystem": {
