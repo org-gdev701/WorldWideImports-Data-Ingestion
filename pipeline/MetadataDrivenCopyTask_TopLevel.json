@@ -121,7 +121,7 @@
 			},
 			"ConnectionControlTableName": {
 				"type": "String",
-				"defaultValue": "metadata.ConnectionControlTable_zyh"
+				"defaultValue": "metadata.ConnectionControlTable"
 			}
 		},
 		"folder": {
