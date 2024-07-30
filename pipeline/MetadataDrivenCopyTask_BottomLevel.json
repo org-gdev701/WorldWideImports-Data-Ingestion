@@ -165,11 +165,11 @@
 														"type": "DatasetReference",
 														"parameters": {
 															"cw_fileName": {
-																"value": "@json(item().SourceObjectSettings).schema",
+																"value": "@json(item().SourceObjectSettings).table",
 																"type": "Expression"
 															},
 															"cw_folderPath": {
-																"value": "@json(item().SourceObjectSettings).schema",
+																"value": "@concat(json(item().SourceObjectSettings).schema,'/',json(item().SourceObjectSettings).table)",
 																"type": "Expression"
 															},
 															"cw_fileSystem": {
